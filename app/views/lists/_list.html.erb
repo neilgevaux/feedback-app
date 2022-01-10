@@ -1,0 +1,32 @@
+<div id="<%= dom_id list %>">
+  <div class="row">
+    <div class="column">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title"><strong>Feedback</strong></h5>
+
+          <p>
+            <strong>From:</strong>
+            <%= list.from %>
+          </p>
+
+          <p>
+            <strong>Project:</strong>
+            <%= list.project %>
+          </p>
+
+          <p>
+            <strong>Description:</strong>
+            <%= list.description %>
+          </p>
+          <p>
+            <% link_to "Show this list", list, class: "btn btn-secondary" %>
+          </p>
+          <%= link_to "Edit", edit_list_path(list) %>
+          <%= button_to "Delete", (list), method: :delete, data: { confirm: 'Are you sure?', class: "btn btn-danger" }%>
+        </div><!-- End card body -->   
+      </div><!-- End card -->
+    </div><!-- End column -->  
+  </div><!-- End row -->
+    
+</div><!-- End dom_id list -->
