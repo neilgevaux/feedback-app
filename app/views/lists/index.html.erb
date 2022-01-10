@@ -1,14 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Feedback</h1>
-<i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i>
 <div id="lists">
-  <% @lists.each do |list| %>
-    <%= render list %>
-    <!-- <p>
-      <%= link_to "Show this list", list, class: "btn btn-secondary" %>
-    </p> -->
-  <% end %>
+<!-- For info: To display cards as Boostrap Grid, it's necessary to loop through the items after the row is created -->
+  <div class="row"><!-- Begins the row -->
+    <% @lists.each do |list| %>
+      <div class="col-sm-4"><!-- Need to add the column after the start of the loop to get the cards to align in columns -->
+
+        <%= render list %>
+      </div><!-- End col -->
+
+    <% end %>
+  </div><!-- End row -->
 </div>
 
 <%= link_to "Add a new item", new_list_path, class: "btn btn-primary" %>
