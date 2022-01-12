@@ -16,14 +16,22 @@
  // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;800;900&display=swap');
+
 body {
     background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
 }
-
+nav {
+    padding: 0 20px;
+}
 .card {
     margin: 5% 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .button {
     display: inline;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #2e2e2e;
 }

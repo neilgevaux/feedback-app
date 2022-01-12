@@ -5,5 +5,3 @@ import "controllers"
 //= require jquery3
 //= require popper
 //= require bootstrap-sprockets
-
-import 'bootstrap-icons/font/bootstrap-icons.css'
