@@ -1,5 +1,7 @@
 class ListsController < ApplicationController
   before_action :set_list, only: %i[ show edit update destroy ]
+  before_action :correct_user, only: [ :edit, :update, :destroy ]
+  before_action :authenticate_user!
 
   # GET /lists or /lists.json
   def index
@@ -56,6 +58,12 @@ class ListsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  # Ensure only the correct user can view their feedback
+  # def correct_user
+  #   @feedback = current_user.lists.find_by(id: params[:id])
+  #   redirect_to lists_path, notice: "Sorry, you can't view this board" if@feedback.nil?
+  # end
 
   private
     # Use callbacks to share common setup or constraints between actions.
