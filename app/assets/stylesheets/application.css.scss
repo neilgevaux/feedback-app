@@ -19,16 +19,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;800;900&display=swap');
 
 body {
-    background-color: #7f5a83;
-    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-    background-size: cover;
-    background-repeat: no-repeat; 
-    // background-color: #fafafa;
+    background-color: #222222;
+    // background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    // background-size: cover;
+    // background-repeat: no-repeat; 
+    background-color: #1e1e1e;
     font-family: 'Roboto', sans-serif;
+    color: #ffffff;
 }
 nav {
     padding: 0 20px;
-    background-color: none;
+    background-color: #020202;
 }
 .nav-link {
     color: #ffffff;
@@ -39,24 +40,43 @@ nav {
     text-decoration-thickness: 3px;
 }
 .card {
+    background-color: #333333;
     margin: 5% 0;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .button {
     display: inline;
 }
 .btn.btn-dark {
-    border: 1px solid #053C63;
-    background-color: #80B5DA;
-    color: #032842;
+    background-color: #385b7e;
+    color: #ffffff;
+    border: none;
 }
 .btn.btn-dark:hover {
-    border: 1px solid #80B5DA;
-    background-color: #053C63;
+    background-color: #2b4663;
     color: #ffffff;
 }
+.btn.btn-outline-danger {
+    background-color: #e54d42;
+    color: #ffffff;
+    border: none;
+}
+.btn.btn-outline-danger:hover {
+    background-color: #942b25;
+    color: #ffffff;
+    border: none;
+}
+.btn.btn-outline-secondary {
+    background-color: #385b7e;
+    color: #ffffff;
+    border: none;
+}
+.btn.btn-outline-secondary:hover {
+    background-color: #2b4663;
+    color: #ffffff;
+    border: none;
+}
 h1, h2, h3, h4, h5, h6 {
-    // color: #2e2e2e;
     color: #ffffff;
 }
 h1 {
@@ -65,5 +85,8 @@ h1 {
     margin-bottom: 20px;
 }
 h5 {
-    color: #2e2e2e;
+    color: #c0bdbd;
+}
+p {
+    font-weight: 300;
 }

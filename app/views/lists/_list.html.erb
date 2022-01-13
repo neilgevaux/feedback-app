@@ -21,7 +21,7 @@
             <% link_to "Show this list", list, class: "btn btn-secondary" %>
           </p>
           <%= link_to "Edit", edit_list_path(list), class: "btn btn-outline-secondary btn-sm" %>
-          <%= button_to "Delete", (list), method: :delete, class: "btn btn-outline-danger btn-sm", form: {style: 'display:inline-block;'}, data: { confirm: 'Are you sure?' }%>
+          <%= button_to "Delete", (list), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm", form: {style: 'display:inline-block;'}%>
         </div><!-- End card body -->   
       </div><!-- End card -->
     </div><!-- End column -->  
