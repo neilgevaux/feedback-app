@@ -16,20 +16,19 @@
  // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
 
 body {
-    background-color: #222222;
+    background-color: #141525;
     // background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
     // background-size: cover;
     // background-repeat: no-repeat; 
-    background-color: #1e1e1e;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: #ffffff;
 }
 nav {
     padding: 0 20px;
-    background-color: #020202;
+    background-color: #07080f;
 }
 .nav-link {
     color: #ffffff;
@@ -40,7 +39,7 @@ nav {
     text-decoration-thickness: 3px;
 }
 .card {
-    background-color: #333333;
+    background-color: #26273a;
     margin: 5% 0;
     // box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -48,13 +47,12 @@ nav {
     display: inline;
 }
 .btn.btn-dark {
-    background-color: #385b7e;
-    color: #ffffff;
+    background-color: #2dbffa;
+    color: #141525;
     border: none;
 }
 .btn.btn-dark:hover {
-    background-color: #2b4663;
-    color: #ffffff;
+    background-color: #1093c7;
 }
 .btn.btn-outline-danger {
     background-color: #e54d42;
@@ -67,27 +65,32 @@ nav {
     border: none;
 }
 .btn.btn-outline-secondary {
-    background-color: #385b7e;
-    color: #ffffff;
+    background-color: #2dbffa;
+    color: #141525;
     border: none;
 }
 .btn.btn-outline-secondary:hover {
-    background-color: #2b4663;
-    color: #ffffff;
+    background-color: #1093c7;
     border: none;
 }
 h1, h2, h3, h4, h5, h6 {
-    color: #c0bdbd;
-    font-weight: 600;
+    color: #ffffff;
+    font-weight: 500;
 }
 h1 {
     font-size: 2.5em;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 p strong {
-    color: #c0bdbd;
+    color: #ffffff;
 }
 p {
-    font-weight: 300;
+    font-weight: 200;
+    color: #c0bdbd;
 }
+// .form-control {
+//     background-color: #222222;
+//     border: none;
+//     color: #ffffff;
+// }
