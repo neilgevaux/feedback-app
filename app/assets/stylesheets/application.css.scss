@@ -46,6 +46,11 @@ nav {
 .button {
     display: inline;
 }
+button.nav-link {
+    border: 0;
+    border-radius: 5px;
+    background-color: #26273a;
+}
 .btn.btn-dark {
     background-color: #2dbffa;
     color: #141525;
