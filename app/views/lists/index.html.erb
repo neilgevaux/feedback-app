@@ -6,11 +6,13 @@
 <!-- For info: To display cards as Boostrap Grid, it's necessary to loop through the items after the row is created -->
   <div class="row"><!-- Begins the row -->
     <% @lists.each do |list| %>
-      <div class="col-sm-4"><!-- Need to add the column after the start of the loop to get the cards to align in columns -->
+      <% if list.user_id == current_user.id %>
+        <div class="col-sm-4"><!-- Need to add the column after the start of the loop to get the cards to align in columns -->
 
-        <%= render list %>
-      </div><!-- End col -->
+          <%= render list %>
 
+        </div><!-- End col -->
+      <% end %>
     <% end %>
   </div><!-- End row -->
 </div>

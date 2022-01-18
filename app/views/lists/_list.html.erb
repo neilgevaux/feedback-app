@@ -20,9 +20,14 @@
 
            <p>
             <strong>User:</strong>
-            <%= list.users %>
+            <%= list.user_id %>
           </p>
 
+           <p>
+            <strong>Timestamp:</strong>
+            <%= list.created_at %>
+          </p>
+            
           <p>
             <% link_to "Show this list", list, class: "btn btn-secondary" %>
           </p>

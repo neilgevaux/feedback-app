@@ -29,8 +29,8 @@
       </div>
 
       <div>
-        <%= form.label :user, style: "display: block" %>
-        <%= form.text_field :description, class:"form-control" %>
+        <%= form.label :user_id, id: :list_user_id, style: "display: block" %>
+        <%= form.number_field :user_id, value: current_user.id %>
       </div>
 
       <br/>
